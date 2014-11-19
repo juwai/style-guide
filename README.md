@@ -7,3 +7,4 @@ Style guide for Juwai
 + [Python](python.md)
 + [JavaScript](javascript.md)
 + [Document](document.md)
++ [Beatiful Computer Programming](bcp.md)

@@ -71,7 +71,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 ## <a name='objects'>Objects</a>
 
@@ -119,7 +119,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
       type: 'alien'
     };
     ```
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 ## <a name='arrays'>Arrays</a>
 
@@ -171,7 +171,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='strings'>Strings</a>
@@ -261,7 +261,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='functions'>Functions</a>
@@ -319,7 +319,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 
@@ -355,7 +355,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     var isJedi = getProp('jedi');
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='variables'>Variables</a>
@@ -464,7 +464,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='hoisting'>Hoisting</a>
@@ -553,7 +553,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
 
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) by [Ben Cherry](http://www.adequatelygood.com/)
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 
@@ -602,7 +602,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
 
   - For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='blocks'>Blocks</a>
@@ -631,7 +631,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='comments'>Comments</a>
@@ -724,7 +724,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
   ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='whitespace'>Whitespace</a>
@@ -832,7 +832,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
         .call(tron.led);
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 ## <a name='commas'>Commas</a>
 
@@ -894,7 +894,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     ];
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='semicolons'>Semicolons</a>
@@ -921,7 +921,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     })();
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='type-coercion'>Type Casting & Coercion</a>
@@ -997,7 +997,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     var hasAge = !!age;
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='naming-conventions'>Naming Conventions</a>
@@ -1110,7 +1110,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     };
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='accessors'>Accessors</a>
@@ -1164,7 +1164,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     };
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='constructors'>Constructors</a>
@@ -1249,7 +1249,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     };
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='events'>Events</a>
@@ -1280,7 +1280,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     });
     ```
 
-  **[⬆](#table-of-contents)**
+  **[[⬆]](#table-of-contents)**
 
 
 ## <a name='modules'>Modules</a>
@@ -1311,7 +1311,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }(this);
     ```
 
-    **[⬆](#table-of-contents)**
+    **[[⬆]](#table-of-contents)**
 
 
 ## <a name='jquery'>jQuery</a>
@@ -1373,14 +1373,14 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     $sidebar.find('ul').hide();
     ```
 
-    **[⬆](#table-of-contents)**
+  **[[⬆]](#table-of-contents)**
 
 
 ## <a name='es5'>ECMAScript 5 Compatibility</a>
 
   - Refer to [Kangax](https://twitter.com/kangax/)'s ES5 [compatibility table](http://kangax.github.com/es5-compat-table/)
 
-  **[⬆](#table-of-contents)**
+  **[[⬆]](#table-of-contents)**
 
 
 ## <a name='testing'>Testing</a>
@@ -1393,7 +1393,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
     }
     ```
 
-    **[⬆](#table-of-contents)**
+  **[[⬆]](#table-of-contents)**
 
 
 ## <a name='performance'>Performance</a>

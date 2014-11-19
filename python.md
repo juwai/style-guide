@@ -2,7 +2,7 @@
 
 This style guideline is based on [PEP-8][PEP-8] and [PEP-257][PEP-257]. But removed some **optional** part to make it more clear.
 
-Except these coding style, a few other best practice we should follow. See [python guild][1] and it's [code style][2] part for more infomation.
+Except these coding style, a few other best practice we should follow. See [python guide][1] and it's [code style][2] part for more infomation.
 
 [PEP-8]: https://www.python.org/dev/peps/pep-0008
 [PEP-257]: https://www.python.org/dev/peps/pep-0257/
@@ -404,9 +404,9 @@ Use one leading underscore only for non-public methods and instance variables.
 
 ### Function and Method Arguments
 
-Always use self for the first argument to instance methods.
+Always use `self` for the first argument to instance methods.
 
-Always use cls for the first argument to class methods.
+Always use `cls` for the first argument to class methods.
 
 If a function argument's name clashes with a reserved keyword, it is generally better to append a single trailing underscore rather than use an abbreviation or spelling corruption. Thus class_ is better than clss . (Perhaps better is to avoid such clashes by using a synonym.)
 

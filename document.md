@@ -2,7 +2,7 @@
 
 To write a useful document, following parts are necessary:
 
-+ Basic infomation
++ Basic information
 + Usage
 + How to contribute
 
@@ -32,7 +32,7 @@ Or you can call it `Quick Start`. Several commands to have a try.
 > - Install with [Bower](http://bower.io): `bower install bootstrap`.
 > - Install with [npm](https://www.npmjs.org): `npm install bootstrap`.
 
-## How to cuntribute
+## How to contribute
 
 The project is awesome, but how to join it?
 
@@ -46,7 +46,7 @@ The project is awesome, but how to join it?
 
 For internal project, [juw.ai](https://github.com/juwai/juw.ai) for example, should write the deployment down.
 
-+ mechine IP and path
++ machine IP and path
 + how to deploy the project to there
 + how to start, stop, restart the server
 + where is the log file

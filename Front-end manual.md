@@ -149,15 +149,17 @@ define(function(){
 ```
 **5.模块注释规范(注释位于每个模块文件的头部)**
 ```
-/// <summary>
-/// depiction：<对该模块的说明及注意事项>
-/// </summary>
-///<dep="<模块依赖>"><模块依赖说明,没有可以删除该节点></dep>
-/// <returns>
-///<对方法返回值的说明，该说明必须明确说明返回的值代表什么含义>
-/// </returns>
-///Writer：作者名
-///CreateDate：<方法创建日期，格式：YYYY-MM-DD>
+  /*
+      <summary>
+      depiction：<对该模块的说明及注意事项>
+      </summary>
+      <dep="<模块依赖>"><模块依赖说明,没有可以删除该节点></dep>
+      <returns>
+      <对方法返回值的说明，该说明必须明确说明返回的值代表什么含义>
+      </returns>
+      Writer：作者名
+      CreateDate：<方法创建日期，格式：YYYY-MM-DD>
+  */
 define(function(){
 
 });
@@ -167,17 +169,19 @@ define(function(){
 
 define(function(){
       
-      /// <summary>
-      /// depiction：返回事件和数据绑定对象
-      /// </summary>
-      ///<dep="jquery">该函数依赖jquery库</dep>
-      ///<paramname="e">event.js传入的event事件对象</param>
-      ///<paramname="d">data.js传入的data对象</param>
-      ///<returns>
-      ///返回一个和当前事件相关联的event对象，并交由页面js处理该对象
-      /// </returns>
-      ///author：Richard
-      ///CreateDate：2014-11-20
+      /* 
+        <summary>
+         depiction：返回事件和数据绑定对象
+         </summary>
+        <dep="jquery">该函数依赖jquery库</dep>
+        <paramname="e">event.js传入的event事件对象</param>
+        <paramname="d">data.js传入的data对象</param>
+        <returns>
+        返回一个和当前事件相关联的event对象，并交由页面js处理该对象
+        </returns>
+        author：Richard
+        CreateDate：2014-11-20
+      */
      return function(e,d){
        
          return {event:e,data:d}

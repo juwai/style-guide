@@ -189,4 +189,18 @@ define(function(){
 
 **4.使用html5标签，页面结构清晰和语义化**
 
-  - 关于h5元素的详细用法和说明请[猛击这里!](http://htm5.sinaapp.com/)
+  - 关于h5元素的详细用法和说明请[猛击这里](http://htm5.sinaapp.com/)
+**5.原则上<a>元素上必须加上title属性，以更好的支持seo**
+**6.代码缩进(请保持两个空格的缩进)**
+  ```
+  <div class="demo">
+    <span></span>
+  </div>
+  ```
+**7.注释风格**
+```
+<!--header start-->
+<header>
+</header>
+<!--header end-->
+```

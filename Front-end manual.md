@@ -189,3 +189,4 @@ define(function(){
 
 **4.使用html5标签，页面结构清晰和语义化**
 
+  - 关于h5元素的详细用法和说明请[猛击这里!](http://htm5.sinaapp.com/)

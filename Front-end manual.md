@@ -191,7 +191,7 @@ define(function(){
 
   - 关于h5元素的详细用法和说明请[猛击这里](http://htm5.sinaapp.com/)
   
-**5.原则上<a>元素上必须加上title属性，以更好的支持seo**
+**5.原则上a标签元素上必须加上title属性，以更好的支持seo**
 
 **6.代码缩进(请保持两个空格的缩进)**
   ```
@@ -206,3 +206,6 @@ define(function(){
 </header>
 <!--header end-->
 ```
+
+## 四.前端集成管理化工具使用
+

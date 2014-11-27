@@ -303,3 +303,11 @@ define(function(){
 });
 
     ```
+    - 发布项目到本地(利用上面的配置文件)
+    ```
+     fis release -dop local
+    ```
+    - 发布项目到远程目录(利用上面的配置文件)
+    ```
+    fis release -dop remote
+    ```

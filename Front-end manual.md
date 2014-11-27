@@ -229,5 +229,77 @@ define(function(){
     
 **2.FIS安装及使用**
   - 安装node.js
-  - 安装fis```npm install -g fis  ```
-  - 安装less编译器```npm install -g fis-parser-less ```
+  - 安装fis:```npm install -g fis  ```
+  - 安装less编译器:```npm install -g fis-parser-less ```
+**3.FIS如何构建**
+  - fis-conf.js(文件)
+    ```
+    fis.config.merge({
+    modules : {
+        parser : {less : ['less']}
+    },
+    roadmap :{
+        ext: {
+            less : 'css'
+        },
+        //路径管理
+        path:[
+            //排除.idea目录
+            {
+                reg:/\/.idea\//i,
+                release:false
+            },
+			//将js目录下的文件全部释放到js目录下,并将包含'/js/'文本的字符全部改为'../js/'
+            {
+                reg:/^\/js\/(.*)/i,
+                release:'/js/$1',
+                url:'../js/$1'
+            },
+			//将img目录下的文件全部释放到img目录下,并将包含'/img/'文本的字符全部改为'../../img/'
+			{
+                reg:/^\/img\/(.*)/i,
+                release:'/img/$1',
+                url:'../../img/$1'
+            }
+        ]
+    },
+    settings : {},
+    //打包配置(将多个css文件打包压缩成index_min.css)
+    pack : {
+        'css/index/index_min.css' : [
+		    'css/reset.css',
+            'css/widget/slider/slider.css',
+			'css/widget/slider/slider.default.css',
+			'css/widget/dialog/dialog.css',
+			'css/widget/dialog/dialog.default.css',
+			'css/index/index.less'
+        ]
+    },
+    //目录发布配置
+    deploy : {
+        local : {
+            to : '../release'
+        },
+        //也可以是一个数组
+        remote : [
+            {
+                //将static目录上传到/home/fis/www/webroot下
+                //上传文件路径为/home/fis/www/webroot/static/xxxx
+                receiver : 'http://www.example.com/path/to/receiver.php',
+                from : '/static',
+                to : '/home/fis/www/webroot'
+            },
+            {
+                //将template目录内的文件（不包括template一级）
+                //上传到/home/fis/www/tpl下
+                //上传文件路径为/home/fis/www/tpl/xxxx
+                receiver : 'http://www.example.com/path/to/receiver.php',
+                from : '/template',
+                to : '/home/fis/www/tpl',
+                subOnly : true
+            }
+        ]
+    }
+});
+
+    ```

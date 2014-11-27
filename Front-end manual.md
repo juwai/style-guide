@@ -231,7 +231,11 @@ define(function(){
   - 安装node.js
   - 安装fis:```npm install -g fis  ```
   - 安装less编译器:```npm install -g fis-parser-less ```
+  - 
 **3.FIS如何构建**
+  - 在项目的根目录(生产目录)建立一个fis-conf.js文件
+  - 打开命令行，定位到该生产目录
+  - 执行:fis release -d[部署命令] [需要部署的配置项名] -o[启用压缩] -p[启用打包] -m[开启MD5混淆] 
   - fis-conf.js(文件)
     ```
     fis.config.merge({

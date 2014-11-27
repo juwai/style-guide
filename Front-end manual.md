@@ -231,7 +231,8 @@ define(function(){
   - 安装node.js
   - 安装fis:```npm install -g fis  ```
   - 安装less编译器:```npm install -g fis-parser-less ```
-  - 
+  
+
 **3.FIS如何构建**
   - 在项目的根目录(生产目录)建立一个fis-conf.js文件
   - 打开命令行，定位到该生产目录

@@ -316,3 +316,5 @@ define(function(){
     ```
     fis release -d remote -op
     ```
+    - 合并后的资源
+    ![资源合并](http://fis.baidu.com/docs/beginning/img/quickstart/combine_84d68d1.png)

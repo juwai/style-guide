@@ -226,3 +226,7 @@ define(function(){
     - 似乎结合了grunt、fis两者的一些特点
     - 学习成本相对于fis来说要低不少（从官方的demo来看）
     - 值得继续关注
+**2.FIS安装及使用**
+  - 安装node.js
+  - 安装fis```npm install -g fis  ```
+  - 安装less编译器```npm install -g fis-parser-less ```

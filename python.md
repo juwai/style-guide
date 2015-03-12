@@ -174,11 +174,17 @@ from subprocess import Popen, PIPE
 
     Put any relevant `__all__` specification after the imports
 
-+ Absolute imports are REQUIRED, as they are usually more readable and tend to be better behaved.
++ Absolute imports are RECOMMENDED, as they are usually more readable and tend to be better behaved. But we can use explicit relative import to import module in the same level, ONLY when the path is too deep:
 
 ```python
 from myclass import MyClass
 from foo.bar.yourclass import YourClass
+```
+
+```python
+from first.second.third.fourth.fifth import sixth
+# you can use this instead
+import .sixth
 ```
 
 + Wildcard imports ( from <module> import * ) should be avoided, as they make it unclear which names are present in the namespace, confusing both readers and many automated tools. There is one defensible use case for a wildcard import, which is to republish an internal interface as part of a public API (for example, overwriting a pure Python implementation of an interface with the definitions from an optional accelerator module and exactly which definitions will be overwritten isn't known in advance).

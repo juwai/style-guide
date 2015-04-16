@@ -1111,7 +1111,7 @@ For JavaScript Coding Standards, we base it on Airbnb js style guide.
 
 ## <a name='line-length'>Max Line Length</a>
 
-  - Max length is 110 characters
+  - Max length is 80 characters
 
     **[[⬆]](#table-of-contents)**
 

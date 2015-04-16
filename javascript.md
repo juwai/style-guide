@@ -1,8 +1,4 @@
-For JavaScript Coding Standards, we follow the Airbnb js style guide.
-
-# Airbnb JavaScript Style Guide() {
-
-*A mostly reasonable approach to JavaScript*
+For JavaScript Coding Standards, we base it on Airbnb js style guide.
 
 
 ## Table of Contents
@@ -23,6 +19,7 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
   + [Semicolons](#semicolons)
   + [Type Casting & Coercion](#type-coercion)
   + [Naming Conventions](#naming-conventions)
+  + [Line Length](#line-length)
   + [Accessors](#accessors)
   + [Constructors](#constructors)
   + [Events](#events)
@@ -1109,6 +1106,12 @@ For JavaScript Coding Standards, we follow the Airbnb js style guide.
       console.log(msg);
     };
     ```
+
+    **[[⬆]](#table-of-contents)**
+
+## <a name='line-length'>Max Line Length</a>
+
+  - Max length is 80 characters
 
     **[[⬆]](#table-of-contents)**
 

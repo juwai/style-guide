@@ -63,6 +63,9 @@ interpreted as described in [RFC 2119].
 - Opening parentheses for control structures MUST NOT have a space after them,
   and closing parentheses for control structures MUST NOT have a space before.
 
+- When making comparisons, check for value and type, not just value. That means
+  use `===` and `!==` instead of `==` and `!=`
+
 ### 1.1. Example
 
 This example encompasses some of the rules below as a quick overview:

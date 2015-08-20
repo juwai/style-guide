@@ -44,7 +44,7 @@ The project is awesome, but how to join it?
 
 ## How to deploy
 
-For internal project, [juw.ai](https://github.com/juwai/juw.ai) for example, should write the deployment down.
+For internal project, you should also write about deployment.
 
 + machine IP and path
 + how to deploy the project to there

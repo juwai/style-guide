@@ -82,8 +82,6 @@ Scattering information in emails and other places makes it difficult to work col
 so I need all the relevant information within the relevant issue.
 
 
-
-
 ### Acceptance Criteria
 
 1. I have clear Acceptance criteria [what a beautiful recursion].
@@ -101,16 +99,7 @@ the outcomes should be documented in that user story.
 * [“Advantages of the “As a user, I want” user story template.”][1]
 * [Scrum guide][4]
 
-### Notes
-
-[Some complementary notes if necessary:]
-
-Support said:
-
-> Here goes a quote from an email
-
-* Plus whatever useful information…
-* Lists are good to keep the information structured and to the point.
+<hr>
 
 [1]: http://www.mountaingoatsoftware.com/blog/advantages-of-the-as-a-user-i-want-user-story-template
 [2]: http://daringfireball.net/projects/markdown/basics

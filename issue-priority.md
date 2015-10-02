@@ -13,7 +13,7 @@ This issue has not been prioritized yet.
 
 Commit what you are working on and work on fixing the issue right now.
 
-**There shouldn’t be any critical issue at the end of the day.**
+**There should not be any unaddressed critical issues at the end of the day.**
 
 - Production website can not run.
 - Development or testing work are blocked.
@@ -23,7 +23,7 @@ Commit what you are working on and work on fixing the issue right now.
 
 Finish the task presently assigned to you, commit, then work on the issue.
 
-**There shouldn’t be any high priority issue after two days.**
+**There should not be any unaddressed high priority issue after two days.**
 
 - Functionality or performance are severly impacted.
 - A certain type of users can’t use one of the features.
@@ -32,7 +32,7 @@ Finish the task presently assigned to you, commit, then work on the issue.
 
 Finish your story, commit, but don’t start any new story before this issue is fixed.
 
-**There should not be any normal issue at the end of the sprint.**
+**There should not be any unaddressed normal issue at the end of the sprint.**
 
 - Functionality or performance are impacted.
 - A certain type of users can’t use one of the features, but with low impact on revenue.

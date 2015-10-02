@@ -1,0 +1,166 @@
+{
+    // While idiomatic js guide gets released…
+    // https://github.com/jscs-dev/node-jscs/blob/master/presets/idiomatic.json
+    // -------------------------------------------------------------------------
+    "preset": "jquery",
+
+    "requireSpacesInsideParentheses": {
+        "all": true,
+        "ignoreParenthesizedExpression": true,
+        "except": [
+            "{", "}",
+            "[", "]",
+            "function",
+            "\""
+        ]
+    },
+
+    "disallowSpacesInCallExpression": true,
+
+    "requireSpaceAfterLineComment": {
+        "allExcept": [
+            "#",
+            "="
+        ]
+    },
+
+    "requireCapitalizedComments": null,
+
+    // The following are style–guides for Juwai.
+    // -------------------------------------------------------------------------
+
+    // Indentation should be 4 spaces.
+    "validateIndentation": 4,
+
+    // All quote marks should be '.
+    "validateQuoteMarks": "'",
+
+    // No line should be longer than 120 characters.
+    "maximumLineLength": {
+        "value": 120,
+        "tabSize": 4,
+        "allExcept": [
+            "urlComments",
+            "regex"
+        ]
+    },
+
+    // Require newline before line comments.
+    "requirePaddingNewLinesBeforeLineComments": {
+        "allExcept": "firstAfterCurly"
+    },
+
+    // Require space before keywords. This list is consistent with the jQuery
+    // preset for requireSpaceAfterKeywords.
+    "requireSpaceBeforeKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "return",
+        "try",
+        "catch"
+    ],
+
+    // Require space after object keys.
+    "requireSpaceBeforeObjectValues": true,
+
+    // Enable validation of separators between function parameters.
+    "validateParameterSeparator": ", ",
+
+    // Require space before {} in function expressions.
+    "requireSpacesInFunction": {
+        "beforeOpeningCurlyBrace": true
+    },
+
+    // Disallow space before () in function expressions.
+    "disallowSpacesInFunction": {
+        "beforeOpeningRoundBrace": true
+    },
+
+    // Require an extra blank newline after var declarations.
+    "requirePaddingNewLineAfterVariableDeclaration": true,
+
+    // Require a blank line after `'use strict';` statements.
+    "requirePaddingNewLinesAfterUseStrict": true,
+
+    // Require newline after blocks.
+    "requirePaddingNewLinesAfterBlocks": {
+        "allExcept": [
+            "inCallExpressions",
+            "inNewExpressions",
+            "inArrayExpressions",
+            "inProperties"
+        ]
+    },
+
+    // Require an empty line above the specified keywords.
+    // @see https://docs.webplatform.org/wiki/javascript/reserved_words
+    "requirePaddingNewlinesBeforeKeywords": [
+        "case",
+        "continue",
+        "debugger",
+        "default",
+        "delete",
+        "do",
+        "for",
+        "if",
+        "new",
+        "return",
+        "switch",
+        "throw",
+        "try",
+        "void",
+        "while",
+        "with",
+        "yield"
+    ],
+
+    // Require newline inside curly braces of all objects.
+    "requirePaddingNewLinesInObjects": true,
+
+    // Disallows multiple blank lines in a row.
+    "disallowMultipleLineBreaks": true,
+
+    // Require a $ before variable names that are jquery assignments.
+    "requireDollarBeforejQueryAssignment": true,
+
+    // Require var declaration to be on the top of an enclosing scope.
+    "requireVarDeclFirst": true,
+
+    // Disallow multiple var declaration (except for-loop).
+    "disallowMultipleVarDecl": {
+        "allExcept" : [
+            "undefined"
+        ]
+    },
+
+    // Require space after opening and before closing grouping parentheses.
+    "requireSpacesInsideParenthesizedExpression": {
+        "allExcept": [
+            "function",
+            "{", "}"
+        ]
+    },
+
+    // Validate JSDoc rules.
+    "jsDoc": {
+        "checkAnnotations": {
+            "preset": "jsdoc3"
+        },
+        "checkParamNames": true,
+        "requireParamTypes": true,
+        "checkRedundantParams": true,
+        "checkReturnTypes": true,
+        "checkRedundantReturns": true,
+        "requireReturnTypes": true,
+        "checkTypes": true,
+        "checkRedundantAccess": true,
+        "enforceExistence": true,
+        "requireHyphenBeforeDescription": true,
+        "requireNewlineAfterDescription": true,
+        "requireDescriptionCompleteSentence": true
+    }
+}

@@ -149,22 +149,17 @@ Open source projects with a global audience are encouraged to adopt a similar po
 ### Imports
 
 + Imports should usually be on separate lines, e.g.:
-
-```python
-Yes: import os
-     import sys
-
-No:  import sys, os
-```
-
+    ```python
+    Yes: import os
+         import sys
+    
+    No:  import sys, os
+    ```
 + It's okay to say this though:
-
-```python
-from subprocess import Popen, PIPE
-```
-
+    ```python
+    from subprocess import Popen, PIPE
+    ```
 + Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants.
-
     Imports should be grouped in the following order:
 
     standard library imports 
@@ -173,20 +168,17 @@ from subprocess import Popen, PIPE
     You should put a blank line between each group of imports.
 
     Put any relevant `__all__` specification after the imports
-
 + Absolute imports are RECOMMENDED, as they are usually more readable and tend to be better behaved. But we can use explicit relative import to import module in the same level, ONLY when the path is too deep:
+    ```python
+    from myclass import MyClass
+    from foo.bar.yourclass import YourClass
+    ```
 
-```python
-from myclass import MyClass
-from foo.bar.yourclass import YourClass
-```
-
-```python
-from first.second.third.fourth.fifth import sixth
-# you can use this instead
-import .sixth
-```
-
+    ```python
+    from first.second.third.fourth.fifth import sixth
+    # you can use this instead
+    import .sixth
+    ```
 + Wildcard imports ( from <module> import * ) should be avoided, as they make it unclear which names are present in the namespace, confusing both readers and many automated tools. There is one defensible use case for a wildcard import, which is to republish an internal interface as part of a public API (for example, overwriting a pure Python implementation of an interface with the definitions from an optional accelerator module and exactly which definitions will be overwritten isn't known in advance).
 
     When republishing names this way, the guidelines below regarding public and internal interfaces still apply.
@@ -198,50 +190,40 @@ import .sixth
 Avoid extraneous whitespace in the following situations:
 
 + Immediately inside parentheses, brackets or braces.
-
-```python
-Yes: spam(ham[1], {eggs: 2})
-No:  spam( ham[ 1 ], { eggs: 2 } )
-```
-
+    ```python
+    Yes: spam(ham[1], {eggs: 2})
+    No:  spam( ham[ 1 ], { eggs: 2 } )
+    ```
 + Immediately before a comma, semicolon, or colon:
-
-```python
-Yes: if x == 4: print x, y; x, y = y, x
-No:  if x == 4 : print x , y ; x , y = y , x
-```
-
+    ```python
+    Yes: if x == 4: print x, y; x, y = y, x
+    No:  if x == 4 : print x , y ; x , y = y , x
+    ```
 + However, in a slice the colon acts like a binary operator, and should have equal amounts on either side (treating it as the operator with the lowest priority). In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted.
+    ```python
+    # Yes:
+    ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]
+    ham[lower:upper], ham[lower:upper:], ham[lower::step]
+    ham[lower+offset : upper+offset]
+    ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]
+    ham[lower + offset : upper + offset]
 
-```python
-# Yes:
-ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]
-ham[lower:upper], ham[lower:upper:], ham[lower::step]
-ham[lower+offset : upper+offset]
-ham[: upper_fn(x) : step_fn(x)], ham[:: step_fn(x)]
-ham[lower + offset : upper + offset]
-
-# No:
-ham[lower + offset:upper + offset]
-ham[1: 9], ham[1 :9], ham[1:9 :3]
-ham[lower : : upper]
-ham[ : upper]
-```
-
+    # No:
+    ham[lower + offset:upper + offset]
+    ham[1: 9], ham[1 :9], ham[1:9 :3]
+    ham[lower : : upper]
+    ham[ : upper]
+    ```
 + Immediately before the open parenthesis that starts the argument list of a function call:
-
-```python
-Yes: spam(1)
-No:  spam (1)
-```
-
+    ```python
+    Yes: spam(1)
+    No:  spam (1)
+    ```
 + Immediately before the open parenthesis that starts an indexing or slicing:
-
-```python
-Yes: dct['key'] = lst[index]
-No:  dct ['key'] = lst [index]
-```
-
+    ```python
+    Yes: dct['key'] = lst[index]
+    No:  dct ['key'] = lst [index]
+    ```
 + More than one space around an assignment (or other) operator to align it with another.
 
 ```python
@@ -259,7 +241,6 @@ long_variable = 3
 ### Other Recommendations
 
 + Always surround these binary operators with a single space on either side: assignment ( = ), augmented assignment ( += , -= etc.), comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not ), Booleans ( and , or , not ).
-
 + If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.
 
 ```python
@@ -419,6 +400,3 @@ If a function argument's name clashes with a reserved keyword, it is generally b
 ### Constants
 
 Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples include `MAX_OVERFLOW` and `TOTAL` .
-
-
-

@@ -11,7 +11,9 @@ A user story should typically have a summary structured this way:
 1. **I want** [goal of the story]
 1. **so that** [reason for the story]
 
-This can become “As a user managing my properties, I want notifications when adding or removing images.”
+The “so that” part is optional if more details are provided in the description.
+
+This can then become “As a user managing my properties, I want notifications when adding or removing images.”
 
 You can read about some reasons for this structure in this [nicely put article][1].
 

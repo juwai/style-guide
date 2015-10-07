@@ -5,7 +5,7 @@ If the context and the goals are made clear, it will be easier for everyone to i
 
 ---
 
-Quick links: [Summary](#summary) | [Description](#description) | [Template](#template) | [Example](#example) | [Resources](#resources) | 
+Quick links: [Summary](#summary) | [Description](#description) | [Template](#template) | [Example](#example) | [Resources](#resources)
 
 ---
 

@@ -3,6 +3,12 @@
 A user story is implemented as well as it is communicated.
 If the context and the goals are made clear, it will be easier for everyone to implement it, test it, refer to it…
 
+---
+
+Quick links: [Summary](./#summary) | [Description](./#description) | [Template](./#template) | [Example](./#example) | [Resources](./#resources) | 
+
+---
+
 ### Summary
 
 A user story should typically have a summary structured this way:

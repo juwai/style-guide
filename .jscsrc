@@ -1,4 +1,7 @@
 {
+    // Allow to parse all errors in a file.
+    "maxErrors": "Infinity",
+
     // While idiomatic js guide gets released…
     // https://github.com/jscs-dev/node-jscs/blob/master/presets/idiomatic.json
     // -------------------------------------------------------------------------
@@ -23,6 +26,8 @@
             "="
         ]
     },
+
+    "disallowMultipleLineBreaks": null,
 
     "requireCapitalizedComments": null,
 
@@ -115,17 +120,15 @@
         "void",
         "while",
         "with",
-        "yield"
+        "yield",
+        "let"
     ],
 
-    // Require newline inside curly braces of all objects.
-    "requirePaddingNewLinesInObjects": true,
-
-    // Disallows multiple blank lines in a row.
-    "disallowMultipleLineBreaks": true,
+    // Require placing object keys on new line.
+    "requireObjectKeysOnNewLine": true,
 
     // Require a $ before variable names that are jquery assignments.
-    "requireDollarBeforejQueryAssignment": true,
+    "requireDollarBeforejQueryAssignment": "ignoreProperties",
 
     // Require var declaration to be on the top of an enclosing scope.
     "requireVarDeclFirst": true,
@@ -145,6 +148,10 @@
         ]
     },
 
+    // Require identifiers to be camelCased or UPPERCASE_WITH_UNDERSCORES.
+    // This won’t be sustainable for now.
+    "requireCamelCaseOrUpperCaseIdentifiers": false,
+
     // Validate JSDoc rules.
     "jsDoc": {
         "checkAnnotations": {
@@ -158,7 +165,14 @@
         "requireReturnTypes": true,
         "checkTypes": true,
         "checkRedundantAccess": true,
-        "enforceExistence": true,
+        // This should be enabled on next PR, after upgrading JSCS to new version.
+        // "enforceExistence": {
+        //     "allExcept": [
+        //         "expressions",
+        //         "exports",
+        //         "paramless-procedures"
+        //     ]
+        // },
         "requireHyphenBeforeDescription": true,
         "requireNewlineAfterDescription": true,
         "requireDescriptionCompleteSentence": true

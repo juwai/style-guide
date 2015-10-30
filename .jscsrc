@@ -144,7 +144,8 @@
     "requireSpacesInsideParenthesizedExpression": {
         "allExcept": [
             "function",
-            "{", "}"
+            "{", "}",
+            "[", "]"
         ]
     },
 

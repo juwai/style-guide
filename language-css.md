@@ -64,7 +64,7 @@ Use `.align-[top|middle|baseline|bottom]` to align the columns based on the base
 
 Use `.align-[left|center|right]` to align the columns to the left, center or right side or their container.
 
-#### Quotes
+### Quotes
 
 Do not use quotation marks in URI values (url()), if you do need to use the `@charset` rule, use double quotes.
 

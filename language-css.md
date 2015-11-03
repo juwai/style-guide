@@ -68,28 +68,29 @@ Use `.align-[left|center|right]` to align the columns to the left, center or rig
 
 Do not use quotation marks in URI values (url()), if you do need to use the `@charset` rule, use double quotes.
 
-* Bad:
+* NOT OK:
 
-```css
-@charset UTF-8;
+    ```css
+    @charset UTF-8;
 
-.sub-user-avatar {
-    background-image: url("/images/sub-user-avatar-holder.png");
-}
-.main-user-avatar {
-    background-image: url('/images/main-user-avatar.png');
-}
-```
+    .sub-user-avatar {
+        background-image: url("/images/sub-user-avatar-holder.png");
+    }
+    .main-user-avatar {
+        background-image: url('/images/main-user-avatar.png');
+    }
+    ```
 
-* Good:
+* OK:
 
-```css
-@charset "UTF-8";
+    ```css
+    @charset "UTF-8";
 
-.sub-user-avatar {
-    background-image: url(/images/sub-user-avatar-holder.png);
-}
-.main-user-avatar {
-    background-image: url(/images/main-user-avatar.png);
-}
-```
+    .sub-user-avatar {
+        background-image: url(/images/sub-user-avatar-holder.png);
+    }
+    
+    .main-user-avatar {
+        background-image: url(/images/main-user-avatar.png);
+    }
+    ```

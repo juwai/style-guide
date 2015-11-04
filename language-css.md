@@ -63,3 +63,34 @@ Use `.col-i.col-[xs|sm|md|lg]-X + .col-i.col-[xs|sm|md|lg]-Y` while:
 Use `.align-[top|middle|baseline|bottom]` to align the columns based on the baseline of the first element.
 
 Use `.align-[left|center|right]` to align the columns to the left, center or right side or their container.
+
+### Quotes
+
+Do not use quotation marks in URI values (url()), if you do need to use the `@charset` rule, use double quotes.
+
+* NOT OK:
+
+    ```css
+    @charset UTF-8;
+
+    .sub-user-avatar {
+        background-image: url("/images/sub-user-avatar-holder.png");
+    }
+    .main-user-avatar {
+        background-image: url('/images/main-user-avatar.png');
+    }
+    ```
+
+* OK:
+
+    ```css
+    @charset "UTF-8";
+
+    .sub-user-avatar {
+        background-image: url(/images/sub-user-avatar-holder.png);
+    }
+    
+    .main-user-avatar {
+        background-image: url(/images/main-user-avatar.png);
+    }
+    ```

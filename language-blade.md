@@ -30,3 +30,14 @@ As decided [in this issue](https://github.com/juwai/juwai-admin/issues/394#event
     @endif
 </div>
 ```
+
+In case of nested control structures and loops, align the markup with the closest template control:
+```blade
+<div>
+    @if (isset($userProfile)
+        @for ($i = 0; $i < 10; $i++)
+        <p>User {{ $i }} […]</p>
+        @endfor
+    @endif
+</div
+```

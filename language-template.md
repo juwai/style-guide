@@ -1,4 +1,4 @@
-## Blade templates
+## Templates (blade, smarty, twig…)
 
 Please refer to [Laravel “Blade Templates” article](http://laravel.com/docs/5.1/blade)
 for style–guides about Blade templates.

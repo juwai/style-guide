@@ -26,14 +26,13 @@ Ideally, it would mention the type of user, the topic and the location of the pr
 We’re using the following template to create defects. It’s using [markdown][2].
 You should get familiar with it if you’re not already, **it’s awesome!**
 
-1. The beginning part of the description explains how to reproduce the defect.
-2. “Acceptance Criteria” explains the expected workflow.
+**The beginning part of the description explains how to reproduce the defect.**
 
 ```markdown
 1. [If I do A.]
 1. [B doesn’t happen.]
 
-### Acceptance Criteria
+### Expected Worfklow
 
 1. [If I do A.]
 1. [B should happen.]

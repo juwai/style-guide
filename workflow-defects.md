@@ -5,6 +5,8 @@ A **bug report is like a cake**, if you **don't take the time** to bake it well 
 A defect is fixed as fast as it is well–communicated (sufficient information, well written).
 If the context and the way to reproduce a defect are made clear (not too much information, not too less), it will be easier for everyone to implement it, test it, refer to it…
 
+**Please [link the defect to the *User Story*](https://confluence.atlassian.com/jira/linking-issues-185729497.html#LinkingIssues-creatinglinktoanotherissueCreatingalinktoanotherissueonthesameJIRAsite) related to the faulty feature.** You can do soe with Jira.
+
 ---
 
 Quick links: [Summary](#summary) | [Template](#template)

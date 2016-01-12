@@ -5,6 +5,17 @@ style–guides about HTML.
 
 ### Addendum
 
+#### Attributes order
+
+`name` and `id` are often related. Keep them together, so that we have:
+```html
+<input class="location" id="galaxy-name" name="galaxy[name]"
+    data-id="123456789"
+    placeholder="Which galaxy does your world belong to?"
+    value="Milky way"
+>
+```
+
 #### Multi–lines
 
 - Elements written on multi-lines MUST have their **attributes indented with 4

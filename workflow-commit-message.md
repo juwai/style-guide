@@ -1,8 +1,10 @@
+## Commit messages
+
 Currently we only force everyone add JIRA story number at the beginning of the commit message.
 
 For a good commit message, I think we could improve in several aspects:
 
-## Content
+### Content
 
 + First, suggest try to use `git commit` instead of `git commit -m`, which will open a new editor
 + Put a title to explain what you are doing in this commit

@@ -1,18 +1,18 @@
-# JavaScript
+## JavaScript
 
 Please refer to [Idiomatic JavaScript](https://github.com/necolas/idiomatic-js)
 for style–guides about JavaScript.
 
 
-## Addendum
+### Addendum
 
-### Fix errors early.
+#### Fix errors early.
 
 We want to **target bugs as soon as possible**. To do so, we should always add
 `'use strict';` as the first statement of any function at the root of the
 document.
 
-### Be more flexible.
+#### Be more flexible.
 
 In case of a function doing too much but that can‘t be easily refactored, and
 if that function has more than two parameters, let’s avoid having the following:
@@ -63,7 +63,7 @@ Ideally: refactor the function into smaller pieces.
 
 
 
-## Tools
+### Tools
 
 Please use the [.jscsrc](.jscsrc) and [.jshintrc](.jshintrc) files in this
 repository for your projects. These files contain most of the style–guide

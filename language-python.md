@@ -1,4 +1,4 @@
-# Python Style Guideline
+## Python Style Guideline
 
 This style guideline is based on [PEP-8][PEP-8] and [PEP-257][PEP-257]. But removed some **optional** part to make it more clear.
 
@@ -11,9 +11,9 @@ Except these coding style, a few other best practice we should follow. See [pyth
 
 ----
 
-## Code lay-out
+### Code layout
 
-### Indentation
+#### Indentation
 
 Use 4 spaces per indentation level.
 
@@ -87,7 +87,7 @@ result = some_function_that_takes_arguments(
 )
 ```
 
-### Maximum Line Length
+#### Maximum Line Length
 
 Limit all lines to a maximum of 79 characters.
 
@@ -122,7 +122,7 @@ class Rectangle(Blob):
                       color, emphasis, highlight)
 ```
 
-### Blank Lines
+#### Blank Lines
 
 Separate top-level function and class definitions with two blank lines.
 
@@ -134,7 +134,7 @@ Use blank lines in functions, sparingly, to indicate logical sections.
 
 Python accepts the control-L (i.e. ^L) form feed character as whitespace; Many tools treat these characters as page separators, so you may use them to separate pages of related sections of your file. Note, some editors and web-based code viewers may not recognize control-L as a form feed and will show another glyph in its place.
 
-### Source File Encoding
+#### Source File Encoding
 
 Code in the core Python distribution should always use UTF-8 (or ASCII in Python 2).
 
@@ -146,7 +146,7 @@ For Python 3.0 and beyond, the following policy is prescribed for the standard l
 
 Open source projects with a global audience are encouraged to adopt a similar policy.
 
-### Imports
+#### Imports
 
 + Imports should usually be on separate lines, e.g.:
     ```python
@@ -183,9 +183,9 @@ Open source projects with a global audience are encouraged to adopt a similar po
 
     When republishing names this way, the guidelines below regarding public and internal interfaces still apply.
 
-## Whitespace in Expressions and Statements
+### Whitespace in Expressions and Statements
 
-### Pet Peeves
+#### Pet Peeves
 
 Avoid extraneous whitespace in the following situations:
 
@@ -238,7 +238,7 @@ y             = 2
 long_variable = 3
 ```
 
-### Other Recommendations
+#### Other Recommendations
 
 + Always surround these binary operators with a single space on either side: assignment ( = ), augmented assignment ( += , -= etc.), comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not ), Booleans ( and , or , not ).
 + If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.
@@ -302,15 +302,15 @@ do_one(); do_two(); do_three(long, argument,
 
 ```
 
-## Comments
+### Comments
 
-### Block Comments
+#### Block Comments
 
 Block comments generally apply to some (or all) code that follows them, and are indented to the same level as that code. Each line of a block comment starts with a # and a single space (unless it is indented text inside the comment).
 
 Paragraphs inside a block comment are separated by a line containing a single # .
 
-### Inline Comments
+#### Inline Comments
 
 DON'T use inline comments!
 
@@ -322,9 +322,9 @@ No:
 x = x + 1                 # Increment x
 ```
 
-## Docstrings
+### Docstrings
 
-### One-line Docstrings
+#### One-line Docstrings
 
 One-liners are for really obvious cases. They should really fit on one line. For example:
 
@@ -342,7 +342,7 @@ Notes:
 + The closing quotes are on the same line as the opening quotes. This looks better for one-liners.
 + There's no blank line either before or after the docstring.
 
-### Multi-line Docstrings
+#### Multi-line Docstrings
 
 Multi-line docstrings consist of a summary line just like a one-line docstring, followed by a blank line, followed by a more elaborate description. The summary line may be used by automatic indexing tools; it is important that it fits on one line and is separated from the rest of the docstring by a blank line. The summary line may be on the same line as the opening quotes or on the next line. The entire docstring is indented the same as the quotes at its first line (see example below).
 
@@ -364,32 +364,32 @@ class Foo:
       ...
 ```
 
-## Naming Conventions
+### Naming Conventions
 
-### Names to Avoid
+#### Names to Avoid
 
 Never use the characters 'l' (lowercase letter el), 'O' (uppercase letter oh), or 'I' (uppercase letter eye) as single character variable names.
 
 In some fonts, these characters are indistinguishable from the numerals one and zero. When tempted to use 'l', use 'L' instead.
 
-### Package and Module Names
+#### Package and Module Names
 
 Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability. Python packages should also have short, all-lowercase names, although the use of underscores is discouraged.
 
-### Class Names
+#### Class Names
 
 Class names should normally use the CapWords convention. 
 
 Note some exceptions like `HTTPClient`, but NOT `HttpClient`.
 
-### Function and Method Names
+#### Function and Method Names
 
 Function and method names should be `lowercase_with_underscores`.
 
 Use one leading underscore only for non-public methods and instance variables.
 
 
-### Function and Method Arguments
+#### Function and Method Arguments
 
 Always use `self` for the first argument to instance methods.
 
@@ -397,6 +397,6 @@ Always use `cls` for the first argument to class methods.
 
 If a function argument's name clashes with a reserved keyword, it is generally better to append a single trailing underscore rather than use an abbreviation or spelling corruption. Thus class_ is better than clss . (Perhaps better is to avoid such clashes by using a synonym.)
 
-### Constants
+#### Constants
 
 Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples include `MAX_OVERFLOW` and `TOTAL` .

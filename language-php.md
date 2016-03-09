@@ -1,4 +1,4 @@
-# PHP Style Guidelines
+## PHP Style Guidelines
 
 We should follow best practices accepted by the community. As mentioned in _[php the right way][1]_, 
 PHP-FIG, the PHP Framework Interop Group, announced PSR. 

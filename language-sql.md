@@ -1,6 +1,4 @@
-# MySQL Style Guideline
-
-----
+## MySQL Style Guideline
 
 ### Minimum Requirements
 

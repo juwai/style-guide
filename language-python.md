@@ -400,3 +400,19 @@ If a function argument's name clashes with a reserved keyword, it is generally b
 #### Constants
 
 Constants are usually defined on a module level and written in all capital letters with underscores separating words. Examples include `MAX_OVERFLOW` and `TOTAL` .
+
+#### String format
+
+We recommend to use `format()` instead of `%`.
+
+Recommended:
+```python
+'{} {}'.format('one', 'two')
+```
+
+Not recommended:
+```python
+'%s %s' % ('one', 'two')
+```
+
+

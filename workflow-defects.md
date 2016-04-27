@@ -1,6 +1,6 @@
 ## Defects
 
-A **bug report is like a cake**, if you **don't take the time** to bake it well enough, your guests will have a **long and hard time digesting it**. If you **bake it for too long**, then the whole kitchen is going to **smell like burnt caramel**. 
+A **bug report is like a cake**, if you **don't take the time** to bake it well enough, your guests will have a **long and hard time digesting it**. If you **bake it for too long**, then the whole kitchen is going to **smell like burnt caramel**.
 
 A defect is fixed as fast as it is well–communicated (sufficient information, well written).
 If the context and the way to reproduce a defect are made clear (not too much information, not too less), it will be easier for everyone to implement it, test it, refer to it…
@@ -9,7 +9,7 @@ If the context and the way to reproduce a defect are made clear (not too much in
 
 ---
 
-Quick links: [Summary](#summary) | [Template](#template)
+Quick links: [Summary](#summary) | [Template](#template) | [Deadline](#deadline)
 
 ---
 
@@ -56,5 +56,14 @@ You should get familiar with it if you’re not already, **it’s awesome!**
 * > Here goes a quote from an email
 * Here goes whatever useful information can exist…
 ```
+
+### Deadline
+
+We may close a defect if a question does not have feedback after:
+
+- Critical: 1 day
+- High:     2 days
+- Normal:   14 days
+- Low:      14 days
 
 [2]: http://daringfireball.net/projects/markdown/basics

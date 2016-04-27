@@ -3,6 +3,9 @@
 The priority of issues indicates when the issue should be handled and when it should be resolved.
 There are examples of issue *severity* to give an idea of how a *priority* can be assigned.
 
+Defects which have un-addressed questions for more time than their priority probably have the wrong priority.
+We may **close a defect** if a question does not have a **[timely feedback](workflow-defects#deadline)**.
+
 Although *severity* and *priority* are often related, please keep in mind they are [different topics](http://wiki.openbravo.com/wiki/QA_Processes/Defects_Severity_Priority).
 
 ### Triage (default)

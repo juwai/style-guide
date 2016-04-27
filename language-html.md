@@ -29,7 +29,7 @@ Example:
 
 ```html
 <input class="hello" id="galaxy"
-    placholder="Which galaxy does your world belong to?"
+    placeholder="Which galaxy does your world belong to?"
     value="Milky way"
 >
 ```

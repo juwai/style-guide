@@ -24,7 +24,7 @@ We are following these processes for our daily work.
 
 ### Tools
 
-Before starting anything, you might want to setup a few tools that will help you get started on the right foot. They ensure you’re notified if some code does not match these style–guides. You might want to install the respective plugin for your editor; configuration files in the repository should do the rest.
+Before starting anything, you might want to setup a few tools that will help you get started on the right foot. They ensure you’re notified if some code does not match these style–guides. You might want to install the respective plugin for your editor, configuration files in the repository should do the rest.
 
 - [EditorConfig](http://editorconfig.org/) <q>helps developers define and maintain consistent coding styles between different editors and IDEs</q>.
 - [phplint](http://www.icosaedro.it/phplint/) for PHP.

@@ -33,9 +33,7 @@ Finish the task presently assigned to you, commit, then work on the issue.
 
 ### Normal
 
-Finish your story, commit, but don’t start any new story before this issue is fixed.
-
-**There should not be any unaddressed normal issue at the end of the sprint.** <small>Unless the time to address an issue exceeds the time left in the sprint</small>
+You can address these issues once no story is available for you in the sprint backlog.
 
 - Functionality or performance are impacted.
 - A certain type of users can’t use one of the features, but with low impact on revenue.

@@ -34,7 +34,7 @@ You should get familiar with it if you’re not already, **it’s awesome!**
 1. [If I do A.]
 1. [B doesn’t happen.]
 
-### Expected Worfklow
+### Expected Workflow
 
 1. [If I do A.]
 1. [B should happen.]

@@ -1,12 +1,12 @@
-## Templates (blade, smarty, twig…)
+# Templates (blade, smarty, twig…)
 
 Please refer to [Laravel “Blade Templates” article](http://laravel.com/docs/5.1/blade)
 for style–guides about Blade templates.
 
 
-### Addendum
+## Addendum
 
-#### Control Structures
+### Control Structures
 
 As decided [in this issue](https://github.com/juwai/juwai-admin/issues/394#event-437311821), the following code…
 
@@ -41,3 +41,10 @@ In case of nested control structures and loops, align the markup with the closes
     @endif
 </div
 ```
+
+
+### PHP in templates
+
+If having the logic outside the template makes code way more complicated, then:
+- ​**either**​ there is a problem in the PHP file (controller, composer…) and we can refactor the code,
+- ​**or**​ put the logic in the template, ​**and**​ leave a comment about what prevents the logic to be outside of the template.

@@ -1,4 +1,4 @@
-# Document-writing guideline
+## Document-writing guideline
 
 To write a useful document, following parts are necessary:
 
@@ -14,14 +14,14 @@ README is a good place to store these parts. But if any of them is too long, jus
 
 Note: All the examples in this guideline are from [twitter/bootstrap](https://github.com/twbs/bootstrap)
 
-## Basic infomation
+### Basic infomation
 
 Several sentences to describe the project.
 
 > Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
 
 
-## Usage
+### Usage
 
 Or you can call it `Quick Start`. Several commands to have a try.
 
@@ -32,7 +32,7 @@ Or you can call it `Quick Start`. Several commands to have a try.
 > - Install with [Bower](http://bower.io): `bower install bootstrap`.
 > - Install with [npm](https://www.npmjs.org): `npm install bootstrap`.
 
-## How to contribute
+### How to contribute
 
 The project is awesome, but how to join it?
 
@@ -42,7 +42,7 @@ The project is awesome, but how to join it?
 
 > Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
 
-## How to deploy
+### How to deploy
 
 For internal project, you should also write about deployment.
 

@@ -1,4 +1,4 @@
-# Beatiful Computer Programming
+# Beautiful Computer Programming
 _转自[安居客技术博客](http://arch.corp.anjuke.com/blog/2013/04/09/beautiful-computer-programming)_
 
 > We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better. Therefore we can be glad that people who lecture at computer conferences speak about the state of the Art.

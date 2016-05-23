@@ -10,7 +10,7 @@ We decided to follow [PSR-2].
 
 ## Operators
 
-Starting from PHP 5.3, you can use `?!` to [simplify ternary operations](https://php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary). The two following statements are the same:
+Starting from PHP 5.3, you can use `?:` to [simplify ternary operations](https://php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary). The two following statements are the same:
 
 ```php
 $otherVariable = $variable ?: $someVariable;

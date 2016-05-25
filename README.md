@@ -31,3 +31,4 @@ Before starting anything, you might want to setup a few tools that will help you
 - [htmllint](http://htmlhint.com/) for HTML.
 - [csslint](http://csslint.net/) for CSS.
 - [jshint](http://jshint.com/) for JavaScript.
+- [pep8](http://pep8online.com/) for Python.

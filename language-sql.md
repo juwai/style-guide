@@ -2,7 +2,8 @@
 
 ### Minimum Requirements
 
-MySQL keywords in uppercase.
+- MySQL keywords in uppercase
+- Column names in lowercase
 
 ### Database table naming convention
 

@@ -59,11 +59,21 @@ You should get familiar with it if you’re not already, **it’s awesome!**
 
 ### Deadline
 
-We may close a defect if a question does not have feedback after:
+Defects must be resolved in a timely manner based on the [issue priority guidelines][3].
+
+### No Feedback Actions
+
+There may be times that we might not get feedback from those that raise the defects, we may then follow the [issue priority guidelines][3] as to when we can close the issue. 
+
+As a summary, we may close a defect if a question does not have feedback after:
 
 - Critical: 1 day
 - High:     2 days
 - Normal:   14 days
 - Low:      14 days
 
+Conversely, it is also recommended to provide feedback before the said limits.
+
+
 [2]: http://daringfireball.net/projects/markdown/basics
+[3]: https://github.com/juwai/style-guide/blob/master/workflow-issue-priority.md

@@ -1,18 +1,56 @@
-## JavaScript
+# JavaScript
 
 Please refer to [Idiomatic JavaScript](https://github.com/necolas/idiomatic-js)
 for style–guides about JavaScript.
 
 
-### Addendum
+## Addendum
 
-#### Fix errors early.
+### Fix errors early.
 
 We want to **target bugs as soon as possible**. To do so, we should always add
 `'use strict';` as the first statement of any function at the root of the
 document.
 
-#### Be more flexible.
+### Quote object properties
+
+> So in the following code
+> 
+> ```javascript
+> {
+>     $key: $value
+> }
+> ```
+> 
+> $key is the object property name '$key', right?
+> 
+> If that's the case it is very confusing coming from PHP where you can use notation like:
+> ```php
+> $object->$key
+> ```
+> In this example $key represents a variable (hopefully a string) that holds the property name for the object.
+
+Following this comment, we should always quote properties in objects to avoid confusion.
+
+That should have the added benefit of making sure reserved keywords are not conflicting.
+
+- This is **OK**:
+
+    ```js
+    var object = {
+        '$someVar': $someVar
+    };
+    ```
+
+- This is **not OK**:
+
+    ```js
+    var object = {
+        $someVar: $someVar
+    };
+    ```
+
+### Be more flexible.
 
 In case of a function doing too much but that can‘t be easily refactored, and
 if that function has more than two parameters, let’s avoid having the following:
@@ -63,13 +101,15 @@ Ideally: refactor the function into smaller pieces.
 
 
 
-### Tools
+## Tools
 
-Please use the [.jscsrc](.jscsrc) and [.jshintrc](.jshintrc) files in this
+Please use the [.jscsrc](https://github.com/juwai/juwai-lint-cfg/blob/master/.jscsrc)
+and [.jshintrc](https://github.com/juwai/juwai-lint-cfg/blob/master/.jshintrc)
+files in the [juwai-lint-cfg](https://github.com/juwai/juwai-lint-cfg)
 repository for your projects. These files contain most of the style–guide
 related issues addressed by our style–guides.
 
-You can use them in you environment with the relevant softwares or plugins:
+You can use them in your environment with the relevant softwares or plugins:
 
 * JSHint: http://jshint.com/install/
 * JSCS: http://jscs.info/overview#friendly-packages

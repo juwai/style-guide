@@ -58,10 +58,44 @@ Use [alternative syntax for control structures](http://php.net/manual/en/control
 - Knowing what structure is closed is easier.
 - PHP and markup are better kept separated.
 
-```php
-<?php if (…) : ?>
-    <?php foreach (…) : ?>
-    <?php endforeach; ?>
-<?php endif; ?>
-```
+Examples:
 
+* NOT OK:
+
+    ```php
+    <?php if (…) { ?>
+    <!-- some markup… -->
+
+        <?php foreach (…) { ?>
+        <!-- some markup… -->
+        <?php } ?>
+
+    <!-- some markup… -->
+    <?php } ?>
+    ```
+
+    ```php
+    <?php if (…) {
+        echo '<!-- some markup… -->';
+
+        foreach (…) {
+            echo '<!-- some markup… -->';
+        }
+
+        echo '<!-- some markup… -->';
+    } ?>
+    ```
+
+* OK:
+
+    ```php
+    <?php if (…) : ?>
+    <!-- some markup… -->
+
+        <?php foreach (…) : ?>
+        <!-- some markup… -->
+        <?php endforeach; ?>
+
+    <!-- some markup… -->
+    <?php endif; ?>
+    ```

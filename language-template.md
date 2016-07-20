@@ -45,6 +45,23 @@ In case of nested control structures and loops, align the markup with the closes
 
 ### PHP in templates
 
+#### Echoing values
+
 If having the logic outside the template makes code way more complicated, then:
 - ​**either**​ there is a problem in the PHP file (controller, composer…) and we can refactor the code,
 - ​**or**​ put the logic in the template, ​**and**​ leave a comment about what prevents the logic to be outside of the template.
+
+#### Writing control structures
+
+Use [alternative syntax for control structures](http://php.net/manual/en/control-structures.alternative-syntax.php):
+
+- Knowing what structure is closed is easier.
+- PHP and markup are better kept separated.
+
+```php
+<?php if (…) : ?>
+    <?php foreach (…) : ?>
+    <?php endforeach; ?>
+<?php endif; ?>
+```
+

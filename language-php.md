@@ -27,14 +27,30 @@ $query = $this->db->query("SELECT foo, bar, baz, foofoo, foobar AS raboof, fooba
 				LIMIT 5, 100");
 ```
 
+## Localized Text
+
+Any text that is output in the control panel should use language variables in your lang file to allow localization.
+
+```
+INCORRECT:
+return "Invalid Selection";
+
+CORRECT:
+return $this->lang->line('invalid_selection');
+```
+
 ## Debugging Code
+
 No debugging code can be left in place for submitted add-ons unless it is commented out, i.e. no var_dump(), print_r(), die(), and exit() calls that were used while creating the add-on, unless they are commented out.
+
 ```
 // print_r($foo);
 ```
 
 ## TRUE, FALSE, and NULL
+
 TRUE, FALSE, and NULL keywords should always be fully lowercase.
+
 ```
 CORRECT:
 if ($foo == true)
@@ -47,7 +63,13 @@ $bar = FALSE;
 function foo($bar = NULL)
 ```
 
+## Code Size
 
+**Methods** - Class methods that exceeds to 10 lines MUST be broken down into units that are testable. Violations of this rule usually indicate that the method is doing too much. Try to reduce the method size by creating helper methods and removing any copy/pasted code.
+
+**Classes** - Long Class files are indications that the class may be trying to do too much. Try to break it down, and reduce the size to something manageable. A class with too many methods is probably a good suspect for refactoring, in order to reduce its complexity and find a way to have more fine grained objects.
+
+**Public Members** - A large number of public methods and attributes declared in a class can indicate the class may need to be broken up as increased effort will be required to thoroughly test it.
 
 ## Operators
 

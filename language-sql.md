@@ -30,12 +30,6 @@
 - Column names **MUST** be lowercase and **MUST** be singular.
 
     Example:
-
-    VALID:
-    ```SQL
-        `username`, `is_active`, `created_by`, `created_at`
-    ```
-    NOT VALID:
     ```SQL
         `username`, `is_active`, `created_by`, `created_at`
     ```

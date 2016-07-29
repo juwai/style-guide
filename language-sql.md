@@ -6,6 +6,7 @@
 
     Example: 
     ```SQL
+    VALID
         UPDATE `consumer` SET `password` = MD5(`password`);
 
     NOT VALID:
@@ -39,7 +40,7 @@
     Example:
     `country_id`, `property_id`, `inventory_id`
     
-- Table and column names **MUST** be enclosed with \` (backtick operator)
+- Table and column names **MUST** be enclosed with <code>`</code> (backtick operator)
 
     Example:
     ```SQL

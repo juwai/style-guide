@@ -2,7 +2,7 @@
 
 We should follow best practices accepted by the community.
 As mentioned in _[php the right way][1]_, PHP-FIG, the PHP Framework Interop Group, announced PSR.
-Some of the style guides are inspired by [CodeIgniter Framework](https://github.com/bcit-ci/CodeIgniter>)
+Some of the style guides are inspired by [CodeIgniter Framework](https://www.codeigniter.com/user_guide/general/styleguide.html)
 
 We decided to follow [PSR-2].
 

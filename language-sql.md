@@ -39,7 +39,7 @@
     Example:
     `country_id`, `property_id`, `inventory_id`
     
-- Table and column names **MUST** be enclosed with `\`` (backtick operator)
+- Table and column names **MUST** be enclosed with \` (backtick operator)
 
     Example:
     ```SQL

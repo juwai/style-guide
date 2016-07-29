@@ -4,12 +4,13 @@
 
 - MySQL keywords in uppercase.
 
-    Example: 
-    ```SQL
+    Example:
     VALID
+    ```SQL
         UPDATE `consumer` SET `password` = MD5(`password`);
-
+    ```
     NOT VALID:
+    ```SQL
         update `consumer` set `password` = md5(`password`);
     ```
 
@@ -21,15 +22,17 @@
     For linking tables:
     `user_subscription`, `user_property`
 
-    We use the form `<left_table><underscore><right_table>` (example: user_subscription) when naming relationship tables to make it easy to show which tables are being linked. We don’t use the plural form of the tables when naming their corresponding relationship tables since regardless of relationship type (many-to-many or one-to-many), every record still contains only one foreign key to the left and right tables respectively.
+    We use the form `<left_table><underscore><right_table>` (example: user_subscription) when naming relationship tables to make it easy to show which tables are being linked. We don’t use the plural form of the tables when naming their corresponding relationship tables since, regardless of relationship type (many-to-many or one-to-many), every record still contains only one foreign key to the left and right tables respectively.
 
 - Column names **MUST** be lowercase and **MUST** be singular.
 
-    Example: 
-    ```SQL
+    Example:
     VALID:
+    ```SQL
         `username`, `is_active`, `created_by`, `created_at`
+    ```
     NOT VALID:
+    ```SQL
         `username`, `is_active`, `created_by`, `created_at`
     ```
 
@@ -43,11 +46,12 @@
 - Table and column names **MUST** be enclosed with <code>`</code> (backtick operator)
 
     Example:
-    ```SQL
     VALID:
+    ```SQL
     SELECT `id`, `name`, `name_sc` FROM `area` WHERE `country_id` = 1 AND `region_id` = 5;
-
+    ```
     NOT VALID:
+    ```SQL
     SELECT id, name, name_sc FROM area WHERE country_id = 1 AND region_id = 5;
     ```
 

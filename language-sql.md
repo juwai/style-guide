@@ -2,30 +2,50 @@
 
 ### Minimum Requirements
 
-- MySQL keywords in uppercase
-    E.g.: 
-    ```
-    UPDATE `consumer` SET `PASSWORD` = MD5(`PASSWORD`);
+- MySQL keywords in uppercase.
+
+    Example: 
+    ```SQL
+        UPDATE `consumer` SET `password` = MD5(`password`);
+
+    NOT VALID:
+        update `consumer` set `password` = md5(`password`);
     ```
 
-- Database table names must be plural. 
-    E.g.: 
-    `users`, `subscriptions`
-    
-    for Linking tables :
-    `users_subscriptions`
+- Database table names **MUST BE** singular and **SHOULD** be small and meaningful.
 
-- Column names in lowercase and must be singular. Avoid using MySQL reserved words such as order, status, etc.
-    E.g.: `username`, `is_active`, `created_by`, `created_at`
+    Example: 
+    `user`, `subscription`
     
-    - Foreign keys must be prefix with parent table.
-    E.g.:
-    `country_id`
-    
-- Table and column names must be enclosed with ` (backtick operator)
-    E.g.:
+    For linking tables:
+    `user_subscription`, `user_property`
+
+- Column names **MUST** be lowercase and **MUST** be singular.
+
+    Example: 
+    ```SQL
+    VALID:
+        `username`, `is_active`, `created_by`, `created_at`
+    NOT VALID:
+        `username`, `is_active`, `created_by`, `created_at`
     ```
+
+- Column names **MUST NOT** be MySQL reserved words: order, status, etc.
+
+- Foreign keys **MUST** be prefixed with the name of their parent’s table.
+
+    Example:
+    `country_id`, `property_id`, `inventory_id`
+    
+- Table and column names **MUST** be enclosed with <code>`</code> (backtick operator)
+
+    Example:
+    ```SQL
+    VALID:
     SELECT `id`, `name`, `name_sc` FROM `area` WHERE `country_id` = 1 AND `region_id` = 5;
+
+    NOT VALID:
+    SELECT id, name, name_sc FROM area WHERE country_id = 1 AND region_id = 5;
     ```
 
 ### Database table naming convention

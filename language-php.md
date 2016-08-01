@@ -60,7 +60,7 @@ No debugging code **MUST** be left in place in any php files, i.e. no var_dump()
 
 ## Code Sizes
 
-**Methods** - Class methods that exceeds to 10 lines **MUST** be broken down into units that are testable. Violations of this rule usually indicate that the method is doing too much. Try to reduce the method size by creating helper methods and removing any copy/pasted code.
+**Methods** - Class methods that exceed to 10 lines **MUST** be broken down into units that are testable. Violations of this rule usually indicates that the method is doing too much. Try to reduce the method size by creating helper methods and removing any copy/pasted code.
 
 **Classes** - Long Class files are indications that the class may be trying to do too much. Try to break it down, and reduce the size to something manageable. A class with too many methods is probably a good suspect for refactoring, in order to reduce its complexity and find a way to have more fine grained objects.
 

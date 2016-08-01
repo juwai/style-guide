@@ -8,14 +8,14 @@
 
     VALID
     ```SQL
-        UPDATE `consumer` SET `password` = MD5(`password`);
+        UPDATE `consumer` SET `email` = 'john.doe@juwai.com';
     ```
     NOT VALID:
     ```SQL
-        update `consumer` set `password` = md5(`password`);
+        update `consumer` set `email` = 'john.doe@juwai.com';
     ```
 
-- Database table names **MUST BE** singular and **SHOULD** be small and meaningful.
+- Database table names **MUST BE** singular and **SHOULD** be short and meaningful.
 
     Example:
     `user`, `subscription`
@@ -34,7 +34,7 @@
         `username`, `is_active`, `created_by`, `created_at`
     ```
 
-- Column names **MUST NOT** be MySQL reserved words: order, status, etc.
+- Column names **MUST NOT** be MySQL reserved words: order, status, etc. (https://dev.mysql.com/doc/refman/5.7/en/keywords.html)
 
 - Foreign keys **MUST** be prefixed with the name of their parent’s table.
 

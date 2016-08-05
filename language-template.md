@@ -8,38 +8,39 @@ for style–guides about Blade templates.
 
 ### Control Structures
 
-As decided [in this issue](https://github.com/juwai/juwai-admin/issues/394#event-437311821), the following code…
+Control structures and common code **MUST** be indented with four spaces to avoid [indentation weirdness](https://github.com/isabeljuwai/list.juwai.com/blob/0fc696c667803ac9c2b993540822b956cfa27c19/src/Juwai/ListBundle/Resources/views/Products/events.html.twig#L61).
+
+**Invalid**
 
 ```blade
-<div>
-    @if (count($records) === 1)
-        <div>
-            …
-        </div>
-    @endif
-</div>
-```
-…should be written like so:
-
-```blade
-<div>
-    @if (count($records) === 1)
+@if (something)
+    @if (somethingElse)
     <div>
         …
     </div>
     @endif
+
+<div>
+    …
 </div>
+@endif
 ```
 
-In case of nested control structures and loops, align the markup with the closest template control:
+**Valid**
+
+
 ```blade
-<div>
-    @if (isset($userProfile)
-        @for ($i = 0; $i < 10; $i++)
-        <p>User {{ $i }} […]</p>
-        @endfor
+@if (something)
+    @if (somethingElse)
+        <div>
+            …
+        </div>
     @endif
-</div
+
+    <div>
+        …
+    </div>
+@endif
 ```
 
 

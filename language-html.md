@@ -8,6 +8,13 @@ style–guides about HTML.
 #### Attributes order
 
 `name` and `id` are often related. Keep them together, so that we have:
+
+1. `class`
+1. `id`
+1. `name`
+1. `data-*`
+1. Everything else
+
 ```html
 <input class="location" id="galaxy-name" name="galaxy[name]"
     data-id="123456789"

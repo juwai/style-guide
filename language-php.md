@@ -17,3 +17,27 @@ $otherVariable = $variable ?: $someVariable;
 
 $otherVariable = $variable ? $variable : $someVariable;
 ```
+
+## Naming
+
+### Variables
+
+We use camelCase for variable names. The first letter should be lowercase.
+
+No:
+
+```php
+$variable_name
+```
+
+No:
+
+```php
+$VariableName
+```
+
+Yes:
+
+```php
+$variableName
+```

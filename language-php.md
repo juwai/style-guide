@@ -18,6 +18,8 @@ $otherVariable = $variable ?: $someVariable;
 $otherVariable = $variable ? $variable : $someVariable;
 ```
 
+Please read [Global Styles](https://github.com/juwai/style-guide/blob/master/language-global.md) for additional guidelines regarding operators
+
 ## Naming
 
 ### Variables
@@ -41,3 +43,7 @@ Yes:
 ```php
 $variableName
 ```
+
+## Templates
+
+Please read [Template Guidelines](https://github.com/juwai/style-guide/blob/master/language-template.md)

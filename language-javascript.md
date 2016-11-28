@@ -12,44 +12,6 @@ We want to **target bugs as soon as possible**. To do so, we should always add
 `'use strict';` as the first statement of any function at the root of the
 document.
 
-### Quote object properties
-
-> So in the following code
-> 
-> ```javascript
-> {
->     $key: $value
-> }
-> ```
-> 
-> $key is the object property name '$key', right?
-> 
-> If that's the case it is very confusing coming from PHP where you can use notation like:
-> ```php
-> $object->$key
-> ```
-> In this example $key represents a variable (hopefully a string) that holds the property name for the object.
-
-Following this comment, we should always quote properties in objects to avoid confusion.
-
-That should have the added benefit of making sure reserved keywords are not conflicting.
-
-- This is **OK**:
-
-    ```js
-    var object = {
-        '$someVar': $someVar
-    };
-    ```
-
-- This is **not OK**:
-
-    ```js
-    var object = {
-        $someVar: $someVar
-    };
-    ```
-
 ### Be more flexible.
 
 In case of a function doing too much but that can‘t be easily refactored, and

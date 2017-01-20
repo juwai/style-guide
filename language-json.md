@@ -1,6 +1,6 @@
 # JavaScript Object Notation
 
-AJAX response have to follow [RPC convention](http://docs.juwai.io/rpc/property.html#module-jw.property.views.rpc).
+AJAX response have to follow RPC convention.
 
 | Type    | Description                                                               | Required Keys   |
 |---------|---------------------------------------------------------------------------|-----------------|

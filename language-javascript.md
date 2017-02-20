@@ -1,16 +1,22 @@
 # JavaScript
 
-Please refer to [Idiomatic JavaScript](https://github.com/necolas/idiomatic-js)
-for style–guides about JavaScript.
-
+Please refer to [airbnb/javascript](https://github.com/airbnb/javascript) for style–guides about JavaScript.
 
 ## Addendum
+
+### Whitespace
+
+Use soft tabs (space character) set to 4 spaces.
+
+### Strings
+
+Avoid to have more than 120 characters per line.
 
 ### Fix errors early.
 
 We want to **target bugs as soon as possible**. To do so, we should always add
 `'use strict';` as the first statement of any function at the root of the
-document.
+document if you are not using ES6.
 
 ### Be more flexible.
 
@@ -61,17 +67,8 @@ someFunctionWithOptions({
 
 Ideally: refactor the function into smaller pieces.
 
-
-
 ## Tools
-
-Please use the [.jscsrc](https://github.com/juwai/juwai-lint-cfg/blob/master/.jscsrc)
-and [.jshintrc](https://github.com/juwai/juwai-lint-cfg/blob/master/.jshintrc)
-files in the [juwai-lint-cfg](https://github.com/juwai/juwai-lint-cfg)
-repository for your projects. These files contain most of the style–guide
-related issues addressed by our style–guides.
 
 You can use them in your environment with the relevant softwares or plugins:
 
-* JSHint: http://jshint.com/install/
-* JSCS: http://jscs.info/overview#friendly-packages
+* ESLint: http://eslint.org/

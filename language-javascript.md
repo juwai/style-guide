@@ -1,6 +1,7 @@
 # JavaScript
 
-Please refer to [airbnb/javascript](https://github.com/airbnb/javascript) for style–guides about JavaScript.
+Please refer to [airbnb/javascript](https://github.com/airbnb/javascript) and
+[eslint-config-juwai](https://github.com/juwai/eslint-config-juwai/blob/master/index.js) for style–guides about JavaScript.
 
 ## Addendum
 
@@ -69,6 +70,6 @@ Ideally: refactor the function into smaller pieces.
 
 ## Tools
 
-You can use them in your environment with the relevant softwares or plugins:
+You can use them in your environment with the relevant tools or plugins:
 
 * ESLint: http://eslint.org/

@@ -45,14 +45,8 @@ $variableName
 ```
 
 ### Function (Only PHP7)
-The function we write should declare parameter type and return type, also apply to function annotation.
+We declare function parameter type and return type.
 ```php
-/**
- * Function description
- *
- * @param  string $param
- * @return string
- */
 function func(string $param):string
 {
     return $param;

@@ -44,6 +44,21 @@ Yes:
 $variableName
 ```
 
+### Function (Only PHP7)
+The function we write should declare parameter type and return type, also apply to function annotation.
+```php
+/**
+ * Function description
+ *
+ * @param  string $param
+ * @return string
+ */
+function func(string $param):string
+{
+    return $param;
+}
+```
+
 ## Templates
 
 Please read [Template Guidelines](https://github.com/juwai/style-guide/blob/master/language-template.md)

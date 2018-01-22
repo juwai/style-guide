@@ -45,9 +45,9 @@ $variableName
 ```
 
 ### Functions (Only PHP7)
-We recommend declare function parameter type and return type in most cases.
+We recommend declaring function parameter type and return type in most cases.
 ```php
-function func(string $param):string
+function func(string $param): string
 {
     return $param;
 }

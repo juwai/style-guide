@@ -44,6 +44,15 @@ Yes:
 $variableName
 ```
 
+### Functions (Only PHP7)
+We recommend declaring function parameter type and return type in most cases.
+```php
+function func(string $param): string
+{
+    return $param;
+}
+```
+
 ## Templates
 
 Please read [Template Guidelines](https://github.com/juwai/style-guide/blob/master/language-template.md)
